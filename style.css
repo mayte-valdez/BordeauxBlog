@@ -1,4 +1,10 @@
 
+.card{
+    border: 1px red;
+    padding: 5%;
+}
+
+
 #fondMenu {
     width: 100%;
     height: 125px;
@@ -46,5 +52,4 @@
 #Forms{
     width: 40%;
 }
-
 
