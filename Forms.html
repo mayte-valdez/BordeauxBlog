@@ -18,42 +18,63 @@
 </head>
 
 <body>
-    <div id="divContainer">
-        <div id="divHeaderContact">
-            <h1>Contact</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div>
-        <div>
+    <div id="divTitleContact">
+        <h1>Contact</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div id="divFormsContactAdress">
+        <div id="divContactAdress">
             <h2>Nous contacter</h2>
             <p>adresse</p>
             <p>téléphone</p>
             <p>bordeaux@exemple.fr</p>
         </div>
+
         <form id="Forms">
-            <div class="form-group">
                 <label for="inputNom">Nom</label>
                 <input type="text" class="form-control" id="inputNom" placeholder="Doe">
-            </div>
-            <div class="form-group">
+
                 <label for="inputPrenom">Prénom</label>
                 <input type="text" class="form-control" id="inputPrenom" placeholder="John">
-            </div>
-            <div class="form-group">
+
                 <label for="inputEmail">Adresse email</label>
                 <input type="email" class="form-control" id="inputEmail" placeholder="exemple@exemple.com">
-            </div>
-            <div class="form-group">
+
                 <label for="inputType">Je suis ...</label>
                 <select class="form-control" id="inputType">
                     <option>Touriste</option>
                     <option>Professionnel</option>
                     <option>Journaliste</option>
                 </select>
-            </div>
-            <div class="form-group">
+
                 <label for="inputMessage">Votre message :</label>
                 <textarea class="form-control" id="inputMessage" rows="3"></textarea>
+
+                <button type="button" class="btn btn-primary">Envoyer</button>
+        </form>
+    </div>
+    <div id="divTeam">
+        <h2>En savoir plus sur l'équipe</h2>
+        <div id="divTeamCards">
+            <div class="team">
+                <img src="https://cdn.pixabay.com/photo/2014/04/02/14/11/male-306408__340.png" alt="Emerick">
+                <h3>Emerick</h3>
+                <p>Lorem ipsum</p>
+            </div>
+            <div class="team">
+                <img src="https://cdn.pixabay.com/photo/2015/10/18/20/15/woman-995164__340.png" alt="Mayté">
+                <h3>Mayté</h3>
+                <p>Lorem ipsum</p>
+            </div>
+            <div class="team">
+                <img src="https://cdn.pixabay.com/photo/2015/10/18/20/15/woman-995164__340.png" alt="Nathalie">
+                <h3>Nathalie</h3>
+                <p>Lorem ipsum</p>
+            </div>
+            <div class="team">
+                <img src="https://cdn.pixabay.com/photo/2015/10/18/20/15/woman-995164__340.png" alt="Clara">
+                <h3>Clara</h3>
+                <p>Lorem ipsum</p>
             </div>
         </div>
     </div>
