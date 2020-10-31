@@ -49,7 +49,36 @@
     color: white;
 }
 
-#Forms{
-    width: 40%;
+/* Start Contact Page */
+#divFormsContactAdress{
+    padding: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
 }
 
+#divContactAdress{
+    width: 45%;
+}
+
+#Forms{
+    width: 45%;
+}
+
+#divTeamCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+.team img {
+    width: 150px;
+    border-radius: 50%;
+}
+/* End Contact Page */
