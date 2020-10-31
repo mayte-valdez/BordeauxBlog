@@ -44,13 +44,43 @@ h2{
 }
 
 
-.indxCarrousel {
-    background-image: url(images/722-1200x400.jpg);
-    background-size: 1200px 400px;
-    padding: 100px;
-    text-align: center;
-    color: white;
+/* CSS Index - Carrousel */
+#indxCarrousel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 0;
+    height: 500px;
+    
 }
+
+#indxCarrouselImages {
+    position: absolute;
+    z-index: 1 !important;
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+/* lui mettre une position ABSOLUTE*/
+}
+#indxCarrouselText {
+    z-index: 2;
+}
+
+
+
+
+
+
+/* CSS Index - Footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+}
+
+/*END CSS Index - Footer */
 
 /* Start Contact Page */
 #divFormsContactAdress{
