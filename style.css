@@ -41,12 +41,19 @@
 }
 
 
+/* CSS Index - Carrousel */
 .indxCarrousel {
     background-image: url(images/722-1200x400.jpg);
     background-size: 1200px 400px;
     padding: 100px;
     text-align: center;
     color: white;
+}
+/* CSS Index - Footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
 }
 
 #Forms{
