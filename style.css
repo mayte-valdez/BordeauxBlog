@@ -1,5 +1,3 @@
-
-
 .categorie {
     margin: 5%;
 }
@@ -56,15 +54,10 @@ nav {
     text-shadow: 0 1px 0 rgba(158, 40, 138, 0.2);
 }
 
-@media (max-widht: 320px){
- 
-}
-
 #menu a:hover{
 color: rgba(158, 40, 138, 0.2);
 text-shadow: 0 1px 0 rgba(158, 40, 138, 0.2);
 }
-
 
 /* CSS Index - Carrousel */
 #indxCarrousel{
@@ -90,34 +83,35 @@ text-shadow: 0 1px 0 rgba(158, 40, 138, 0.2);
     z-index: 2;
 }
 
-
-
-
-
-
 /* CSS Index - Footer */
 footer {
     display: flex;
     flex-direction: row;
     background-color: blue;
 }
-
 /*END CSS Index - Footer */
 
-/* Start Contact Page */
-#divFormsContactAdress{
+/* DEBUT PAGE CONTACT */
+#divFormsContactAdressMap{
     padding: 20px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
 }
 
-#divContactAdress{
-    width: 45%;
+#divContactAdressMap{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#divContactMap{
+    width: 33%;
 }
 
 #Forms{
-    width: 45%;
+    width: 33%;
 }
 
 #divTeamCards{
@@ -132,8 +126,82 @@ footer {
     align-items: center;
     width: 20%;
 }
-.team img {
-    width: 150px;
+
+.teamImages {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+    overflow: hidden;
+    filter: grayscale(100%);
 }
-/* End Contact Page */
+
+.teamImagesSquare {
+    width: auto;
+    height: 100%;
+    
+}
+
+.teamImagesRec {
+    width: 100%;
+    height: auto;
+}
+
+#recadrageEmerick{
+    margin-top: -25px;
+}
+
+/* DEBUT RESPONSIVE SITE */
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au minimum 1280px */
+@media screen and (min-width: 1280px){
+    .container{
+        max-width: 1200px;
+    }
+}
+
+/* Sur les écrans, quand la largeur de la fenêtre est comprise entre 992px et 1280px */
+@media screen and (min-width: 992px) and (max-width: 1200px){
+
+}
+
+/* Sur les écrans, quand la largeur de la fenêtre est comprise entre 768px et 992px */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    #divFormsContactAdress{
+        flex-direction: column-reverse;
+    }
+
+    #divContactAdressMap{
+        flex-direction : column;
+        width: 90%;
+    }
+    
+    #Forms{
+        width: 90%;
+    }
+
+    #divTeamCards{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 768px */
+@media screen and (max-width: 768px){
+
+    #divFormsContactAdressMap{
+        flex-direction: column-reverse;
+    }
+
+    #Forms{
+        width: 90%;
+    }
+
+    #divTeamCards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+/* FIN RESPONSIVE SITE */
+
