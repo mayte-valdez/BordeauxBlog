@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+   
     <title>Bordeaux</title>
-    <link rel="stylesheet" href="style.css">
+    
     <script src="https://kit.fontawesome.com/e9d6186a74.js" crossorigin="anonymous"></script>
 
 
@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
     <script src="bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+   
 
      <!--page de style-->
     <link rel="stylesheet" href="style.css">
@@ -24,34 +24,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <!-- Content here -->
-   
-        <!-- Création du Menu -->
-        <nav>
-
-            <ul id="menu">
-                <li class="nav-item">
-                    <a href="index.html">Accueil</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">Vin</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">Gastronomie</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">Lieux incontournable</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">Catégorie 4</a>
-                </li>
-                <li class="nav-item">
-                    <a href="Forms.html">Contact</a>
-                </li>
-            </ul>  
-
-        </nav>
+    <!-- Création du Menu -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html"><img src ="images/logoBdo.png" id="logo"></a>
+          </div>
+    <ul class="nav">
+        <li class="nav-item">
+            <a href="index.html">Accueil</a>
+          </li>
+        <li class="nav-item">
+            <a href="#">Vin</a>
+          </li>
+        <li class="nav-item">
+            <a href="#">Gastronomie</a>
+          </li>
+        <li class="nav-item">
+            <a href="#">Lieux incontournables</a>
+          </li>
+        <li class="nav-item">
+            <a href="Forms.html">Contact</a>
+          </li>
+    </ul> 
+    <form class="form-inline">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="Forms.html">Nous contacter</a></button>
+      </form>
+    
+    </div>
+  </nav>
   
         <!--Start Carrousel bootstrap-->
         
@@ -244,6 +245,7 @@
 
             </div>
         </div>
+    </div>
     
 
      <!--Start footer-->
@@ -283,6 +285,7 @@
     
     <!--End footer-->
 
-    </div> 
+
+    
 </body>
 </html>
