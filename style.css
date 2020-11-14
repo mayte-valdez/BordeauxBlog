@@ -1,19 +1,70 @@
 
+/* CSS Index - Categories */
 
 .categorie {
     margin: 5%;
 }
-
-h2{
+.emoji{
+    font-size: 4em;
     text-align: center;
+    margin-bottom: -0.2em;
+}
+.subTitre{
+    text-align: center;
+    margin: 0;
+}
+
+.card{
+    border: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.16) ;
+}
+.card:hover{
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.32) ;
+}
+
+.titreCards{
+    border-bottom: #980D2B solid 1px;
     margin-bottom: 2em;
-    font-family: 'Josefin Sans', sans-serif;
+}
+.card-title{
+    color: #262122;
+    font-weight: bold;
+}
+.card a:hover{
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+.card-deck{
+    background-image: src="images/tache-vin.svg";
+}
+.card-body div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lienText{
+    color: #980D2B;
+    border-bottom: #980D2B solid 1px;
+    margin: 0;
+    width: auto;
+}
+
+.texteRed{
+    color: #980D2B;
 }
 
 body{
     margin-top: 0;
     align-items: flex-start;
     font-family: 'Open Sans', sans-serif;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 nav {
@@ -56,15 +107,10 @@ nav {
     text-shadow: 0 1px 0 rgba(158, 40, 138, 0.2);
 }
 
-@media (max-widht: 320px){
- 
-}
-
 #menu a:hover{
 color: rgba(158, 40, 138, 0.2);
 text-shadow: 0 1px 0 rgba(158, 40, 138, 0.2);
 }
-
 
 /* CSS Index - Carrousel */
 #indxCarrousel{
@@ -74,8 +120,7 @@ text-shadow: 0 1px 0 rgba(158, 40, 138, 0.2);
     align-items: center;
     position: relative;
     margin: 10px 0;
-    height: 500px;
-    
+    height: 500px; 
 }
 
 #indxCarrouselImages {
@@ -83,41 +128,168 @@ text-shadow: 0 1px 0 rgba(158, 40, 138, 0.2);
     z-index: 1 !important;
     width: 100%;
     height: auto;
-    opacity: 0.5;
+    opacity: 1;
 /* lui mettre une position ABSOLUTE*/
 }
 #indxCarrouselText {
     z-index: 2;
 }
 
-
-
-
-
-
 /* CSS Index - Footer */
 footer {
     display: flex;
-    flex-direction: row;
-    background-color: blue;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #175676;
 }
 
+#footerChild1 {
+    margin: 0 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#footerLogo {
+    opacity: 0.5;
+    width: 200px;
+    height: auto;
+    align-self: center !important;
+}
+
+#footerFollow {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#footerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#footerFollow>li,
+#footerInfo>li {
+    list-style: none;
+}
+
+footer h3{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 20px 0 0 0;
+    letter-spacing: 1px;
+    font-family: Josefin Sans;
+}
+
+footer a{
+    color: white;
+    opacity: 0.7;
+    font-size: 14px;
+    letter-spacing: 0.72px;
+    font-family: Josefin Sans;
+}
+
+
+#footerEmail {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#footerFollow,
+#footerInfo {
+    padding: 0 20px;
+}
+
+#footerFollow>a {
+    font-size: 14px;
+    color: white;
+    opacity: 0.7;
+    padding:0;
+}
+
+#footerEmail {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#footerEmailInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#footerEmailInput input{
+    border: solid 1px #2c2b2b;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+#footerEmailInput input::placeholder{
+    font-size: 12px;
+}
+
+#footerEmailValider {
+    background-color: #980D2B;
+    border: solid 1px #2c2b2b;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+.fas {
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+}
+
+#footerChild2 {
+    margin: 0 100px;
+}
+
+#footerChild2>hr {
+    color: white;
+    opacity: 0.7;
+    border: 1px solid white;
+    margin: 20px 0 10px 0;
+
+}
+#footerChild2>p {
+    color: white;
+    opacity: 0.7;
+    font-size: 12px;
+    font-family: Josefin Sans;
+}
 /*END CSS Index - Footer */
 
-/* Start Contact Page */
-#divFormsContactAdress{
+/* DEBUT PAGE CONTACT */
+#divFormsContactAdressMap{
     padding: 20px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
 }
 
-#divContactAdress{
-    width: 45%;
+#divContactAdressMap{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#divContactMap{
+    width: 33%;
 }
 
 #Forms{
-    width: 45%;
+    width: 33%;
 }
 
 #divTeamCards{
@@ -132,8 +304,82 @@ footer {
     align-items: center;
     width: 20%;
 }
-.team img {
-    width: 150px;
+
+.teamImages {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+    overflow: hidden;
+    filter: grayscale(100%);
 }
-/* End Contact Page */
+
+.teamImagesSquare {
+    width: auto;
+    height: 100%;
+    
+}
+
+.teamImagesRec {
+    width: 100%;
+    height: auto;
+}
+
+#recadrageEmerick{
+    margin-top: -25px;
+}
+
+/* DEBUT RESPONSIVE SITE */
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au minimum 1280px */
+@media screen and (min-width: 1280px){
+    .container{
+        max-width: 1200px;
+    }
+}
+
+/* Sur les écrans, quand la largeur de la fenêtre est comprise entre 992px et 1280px */
+@media screen and (min-width: 992px) and (max-width: 1200px){
+
+}
+
+/* Sur les écrans, quand la largeur de la fenêtre est comprise entre 768px et 992px */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    #divFormsContactAdress{
+        flex-direction: column-reverse;
+    }
+
+    #divContactAdressMap{
+        flex-direction : column;
+        width: 90%;
+    }
+    
+    #Forms{
+        width: 90%;
+    }
+
+    #divTeamCards{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 768px */
+@media screen and (max-width: 768px){
+
+    #divFormsContactAdressMap{
+        flex-direction: column-reverse;
+    }
+
+    #Forms{
+        width: 90%;
+    }
+
+    #divTeamCards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+/* FIN RESPONSIVE SITE */
+
