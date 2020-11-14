@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="style.css">
     <title>Bordeaux</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e9d6186a74.js" crossorigin="anonymous"></script>
+
 
     <!--integration boostrap jQuery-->
     <script src="https://unpkg.com/@popperjs/core@2"></script>
@@ -49,11 +51,7 @@
         </nav>
   
         <!--Start Carrousel bootstrap-->
-        <div class="indxCarrousel">
-            <h1>Bordeaux à toi</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium sint maiores</p>
-        </div>
-
+        
         <div id="indxCarrousel">
             
             <div id="indxCarrouselImages" class="carousel slide" data-ride="carousel">
@@ -83,7 +81,7 @@
                 </a>
             </div>
             
-            <div id="indxCarrouselText"></div>
+            <div id="indxCarrouselText">
                 <h1>Bordeaux de toi</h1>
                 <br>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
@@ -150,20 +148,37 @@
 
      <!--Start footer-->
         <footer>
-            <img src="images/469-100x100.jpg" alt="Logo">
-            <ul>
-                <li>About us</li>
-                <li>COntact US</li>
-                <li>Terms & COnditions</li>
-            </ul>
-            <ul>
-                <li><a class="btn-floating btn-lg btn-fb" type="button" role="button"><i class="fab fa-facebook-f"></i></a> Facebook</li>
-                <li><a class="btn-floating btn-lg btn-tw" type="button" role="button"><i class="fab fa-twitter"></i></a>Twitter</li>
-                <li><a class="btn-floating btn-lg btn-ins" type="button" role="button"><i class="fab fa-instagram"></i></a>Instagram</li>
-            </ul>
-            <ul>
-                <li> Rue de la paix 15 - 33000 Bordeaux</ul></li>
-                <li>+33 6 785 614 52</li>
+            <div id="footerChild1">
+                
+                <img id = "footerLogo" src="images/logoBdo.png" alt="Logo">
+
+                <ul id = "footerFollow">
+                    <h3>Suivez-nous</h3>
+                    <li><a href="#" alt="Lorem"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="#" alt="Lorem"><i class="fab fa-twitter"></i>Twitter</a></li>
+                    <li><a href="#" alt="Lorem"><i class="fab fa-instagram"></i>Instagram</a></li>
+                </ul>
+                
+                <ul id="footerInfo">
+                    <h3>More info :</h3>
+                    <li><a href="" alt="Lorem">About us</a></li>
+                    <li><a href="" alt="Lorem">Contact US</a></li>
+                    <li><a href="" alt="Lorem">Terms & Conditions</a></li>
+                </ul>
+                
+                <div id = "footerEmail">
+                    <h3>Ne ratez rien</h3><br>
+                    <div id="footerEmailInput">
+                        <input type="email" placeholder="Votre email">
+                        <button id="footerEmailValider"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="footerChild2">
+                <hr>
+                <p>2020<sup>&copy;</sup> Tous droits réservés, The very best of Bordeaux est un xercice de la Wild Code School</p>
+            </div>
         </footer>
     
     <!--End footer-->
