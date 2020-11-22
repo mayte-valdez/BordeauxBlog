@@ -5,17 +5,21 @@ h2{
 }
 
 /*CSS Menu*/
-nav{
-   display: flex;
-   flex-direction: row;
-}
 
-.navbar{
+
+nav{
     background-color: #980D2B;
     height: 100px; 
-    justify-content: space-between;
-}
+    width: 100vw !important;
 
+}
+.navbar-header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
 nav ul li{
     display: inline-block;
     margin: 0 30px;
@@ -573,6 +577,5 @@ footer a:hover{
     #footerEmailInput {
         width: 100%;
         padding-bottom: 30px;
+    }
 }
-
-/* FIN RESPONSIVE SITE*/
