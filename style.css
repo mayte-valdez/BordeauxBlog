@@ -73,10 +73,15 @@ ul :hover{
 }
 
 .categorie {
-    margin: 5%;
+    margin: 5% 0;
 }
-
+.card-title:hover{
+    color: #980D2B;
+}
 /* CSS Index - Carrousel */
+.w-100{
+    filter: brightness(0.50);
+}
 .carousel-caption {
     position: absolute;
     right: 15%;
@@ -116,6 +121,8 @@ ul :hover{
 .card{
     border: none;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.16) ;
+    min-width: 280px;
+    margin-bottom: 15px!important;
 }
 .card:hover{
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.32) ;
@@ -134,9 +141,7 @@ ul :hover{
     text-decoration: none;
     cursor: pointer;
 }
-.card-deck{
-    background-image: src="images/tache-vin.svg";
-}
+
 .card-body div{
     display: flex;
     flex-direction: row;
@@ -153,6 +158,8 @@ ul :hover{
 .texteRed{
     color: #980D2B;
 }
+
+
 /*END CSS Index - cards -sections */
 
 
@@ -486,6 +493,12 @@ footer a:hover{
         flex-direction: column;
         align-items: center;
     }
+    .card-deck{
+        flex-flow: row nowrap;
+        overflow: scroll;
+        justify-content: flex-start;
+    }
+
     /*Footer */
     #footerChild1 {
         margin: 0 10px;
@@ -548,6 +561,8 @@ footer a:hover{
         flex-direction: column;
         align-items: center;
     }
+  
+  
     /*Footer */
     #footerChild1 {
         margin: 0 2%;
@@ -599,5 +614,11 @@ footer a:hover{
     #footerEmailInput {
         width: 100%;
         padding-bottom: 30px;
+    }
+    .emoji{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 1.5em;
     }
 }
