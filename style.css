@@ -5,14 +5,19 @@ h2{
 }
 
 /*CSS Menu*/
-
+#burger{
+    display: none;
+}
 
 nav{
     background-color: #980D2B;
-    height: 100px; 
+    height: auto; 
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 100vw !important;
 
 }
+
 .navbar-header{
     display: flex;
     flex-flow: row wrap;
@@ -367,13 +372,24 @@ footer a:hover{
     .container{
         max-width: 1200px;
     }
-
+    #navbarSupportedContent1{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
 
 }
 
 /* Sur les écrans, quand la largeur de la fenêtre est comprise entre 992px et 1280px */
 @media screen and (min-width: 992px) and (max-width: 1200px){
     /*Menu*/
+    #navbarSupportedContent1{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
     nav{
         display: flex;
         flex-direction: row;
@@ -432,6 +448,10 @@ footer a:hover{
 @media screen and (min-width: 768px) and (max-width: 992px){
     
     /*Menu*/
+    #burger{
+        display: initial;
+    }
+ 
     #logo{
         width: 130px;
         height: auto;
@@ -494,7 +514,9 @@ footer a:hover{
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 768px */
 @media screen and (max-width: 768px){
     /*Menu*/
-
+    #burger{
+        display: initial;
+    }
     #logo{
         width: 100px;
         height: auto;
