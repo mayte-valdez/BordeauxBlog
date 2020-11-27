@@ -330,6 +330,22 @@ footer a:hover{
 /*END CSS Index - Footer */
 
 /* DEBUT PAGE CONTACT */
+.btnNeg{
+    background-color: #980D2B;
+    color: white;
+    font-family: Josefin Sans;
+    border: #980D2B solid 1px;
+    border-radius: 15px;
+    padding: 2px 15px;
+}
+.btnNeg:hover{
+    background-color:white ;
+    color: #980D2B;
+    font-family: Josefin Sans;
+    border: #980D2B solid 1px;
+    border-radius: 15px;
+    padding: 2px 15px;
+}
 #divTitleContact{
     padding-top: 50px;
     display: flex;
