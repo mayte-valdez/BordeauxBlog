@@ -4,6 +4,7 @@ h2{
     font-family: 'Josefin Sans', sans-serif;
 }
 
+
 /*CSS Menu*/
 #burger{
     display: none;
@@ -15,16 +16,23 @@ nav{
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100vw !important;
-
+    
 }
+/*flex-flow: row wrap;*/
 
 .navbar-header{
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
 }
+
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+}
+
 nav ul li{
     display: inline-block;
     margin: 0 30px;
@@ -406,7 +414,21 @@ footer a:hover{
         justify-content: space-between;
         align-items: center;
     }
+
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
 }
+
 
 /* Sur les écrans, quand la largeur de la fenêtre est comprise entre 992px et 1280px */
 @media screen and (min-width: 992px) and (max-width: 1200px){
