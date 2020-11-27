@@ -16,16 +16,13 @@ nav{
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100vw !important;
-    
 }
-/*flex-flow: row wrap;*/
 
 .navbar-header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .navbar-nav{
@@ -49,7 +46,6 @@ nav ul li a{
 #logo{
     height: auto;
     width: 70%;
-
 }
 
 .btn{
@@ -169,6 +165,20 @@ ul :hover{
 
 
 /*END CSS Index - cards -sections */
+
+
+/*INFO PRACTIQUE*/
+#info{
+    background-color:#FDF7F9;
+    padding: 20px  ;
+    margin-bottom: 50px; 
+}
+
+.infoPrac{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+    padding-top: -60px;
+}
 
 
 /* CSS Index - Footer */
@@ -427,6 +437,7 @@ footer a:hover{
 .navbar-nav{
     display: flex;
     flex-direction: row;
+    }
 }
 
 
