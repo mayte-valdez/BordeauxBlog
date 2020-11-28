@@ -69,12 +69,12 @@
             <!--Div du titre-->
             <p class="emoji">✉️</p> 
             <h2 class="texteRed">Contact</h2>
-            <p>Si vous avez la moindre question sur les bons plans ou si vous souhaitez être référencé sur le site, n'hésitez pas a nous contacter via le formulaire ci-dessous.</p>
+            <p>Si vous avez la moindre question sur les bons plans ou si vous souhaitez être référencé sur le site, n'hésitez pas à nous contacter via le formulaire ci-dessous.</p>
         </div>
         
-        <div id="divFormsContactAdressMap">
+        <div id="divFormsContactAdressMap" class="row">
             <!--Div du form + du contact + de la MapGoogle de la page-->
-            <form><!--Formulaire de contact à gauche de la page-->
+            <form class="col"><!--Formulaire de contact à gauche de la page-->
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text">Nom</span>
@@ -91,7 +91,7 @@
 
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                        <div class="input-group-text">@</div>
+                        <div class="input-group-text">Email</div>
                     </div>
                     <input type="emails" class="form-control" placeholder="exemple@mail.com">
                 </div>
@@ -107,20 +107,20 @@
 
                 <div class="form-group">
                     <label for="inputMessage">Votre message :</label>
-                    <textarea class="form-control" id="inputMessage" rows="3"></textarea>
+                    <textarea class="form-control" id="inputMessage" rows="6"></textarea>
                 </div>
 
-                <button type="submit" class="btnNeg">Submit</button>
+                <button id="btnForm" type="submit" class="btnNeg">Envoyer</button>
             </form>
-            <div id="divContactAdressMap">
+            <div id="divContactAdressMap" class="col">
                 <!--Div droite de la page-->
-                <h2 class="texteRed">Nous contacter</h2>
+                <h2 class="texteRed">Nous retrouver</h2>
                 <div id="divContactMap">
                     <p>Wild Code School <br> 02.11.03.44.05 <br> bordeaux@exemple.fr</p> 
                     <!--Div droite de la map Google-->
-                    <iframe
+                    <iframe id="mapG"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.030000776241!2d-0.563099884554328!3d44.84132238280889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527cba74d1bdf%3A0xb92bcdcad0920688!2sWild%20Code%20School%2C%20Formation%20d%C3%A9veloppeur%20web%20%26%20data%20analyst!5e0!3m2!1sfr!2sfr!4v1605365996204!5m2!1sfr!2sfr"
-                        width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""
+                        height="300" frameborder="0" style="border:0;" allowfullscreen=""
                         aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
@@ -212,6 +212,20 @@
     </footer>
 
     <!--End footer-->
+
+    <script>
+        
+        let btnForm = document.querySelector("#btnForm");
+        btnForm.addEventListener("click", function(){
+            alert("✉️ Vous recevez très bientôt de nos nouvelles")
+        });
+
+        let btnEmailValider = document.querySelector("#footerEmailValider");
+        btnEmailValider.addEventListener("click", function(){
+            alert("🎉 Merci pour votre inscription ")
+        });
+
+    </script>
 </body>
 
 </html>

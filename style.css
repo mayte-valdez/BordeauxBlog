@@ -1,4 +1,4 @@
-h2{
+h2, h3{
     text-align: center;
     margin-bottom: 1em;
     font-family: 'Josefin Sans', sans-serif;
@@ -70,12 +70,21 @@ ul :hover{
     color: white;
     border: white solid 2px;
     margin-left: 20px;
+    background-color: white;
 }
 
 .btn a{
+    color: #980D2B;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.btn a:hover{
     color: white;
 }
-
+.btn:hover, .btn:active{
+    background-color: #980D2B !important;
+    color: white;
+    border: white solid 2px !important;
+}
 .categorie {
     margin: 5% 0;
 }
@@ -88,9 +97,14 @@ ul :hover{
 }
 .carousel-caption {
     position: absolute;
-    right: 15%;
-    bottom: 250px !important;
-    left: 15%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*bottom: 20% !important;*/
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .carousel-caption h5 {
@@ -99,7 +113,7 @@ ul :hover{
     padding-top: 50px;
 }
 
-.indxHdrLogo {
+#indxHdrLogo {
     width: 400px !important;
     height: auto;
 }
@@ -107,9 +121,6 @@ ul :hover{
 .d-block {
     opacity: 90%;
 }
-
-
-
 
 /* CSS Index - Categories */
 .emoji{
@@ -330,8 +341,16 @@ footer a:hover{
 /*END CSS Index - Footer */
 
 /* DEBUT PAGE CONTACT */
+.input-group-text{
+    width: 80px;
+    display: block;
+    text-align: center;
+}
+#mapG{
+    width: 400px;
+}
 .btnNeg{
-    background-color: #980D2B;
+    background-color: #980D2B ;
     color: white;
     font-family: Josefin Sans;
     border: #980D2B solid 1px;
@@ -370,7 +389,7 @@ footer a:hover{
 
 #divContactMap{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     padding: 10px;
     padding-left: 0px;
@@ -450,9 +469,9 @@ footer a:hover{
         justify-content: space-between;
     }
 
-.navbar-nav{
-    display: flex;
-    flex-direction: row;
+    .navbar-nav{
+        display: flex;
+        flex-direction: row;
     }
 }
 
@@ -553,6 +572,8 @@ footer a:hover{
 
     #divContactAdressMap{
         align-items: center;
+        text-align: center;
+        justify-content: center;
     }
 
     #divContactMap{
@@ -628,7 +649,11 @@ footer a:hover{
         font-size: 10px;
     }
     /*Fin Menu*/
-    /* Fin Menu*/
+    /* Carrousel*/
+    #indxHdrLogo {
+        width: 300px !important;
+        height: auto;
+    }
 
     /*début contact*/
     #divTitleContact{
@@ -637,6 +662,8 @@ footer a:hover{
 
     #divContactAdressMap{
         align-items: center;
+        text-align: center;
+        justify-content: center;
     }
 
     #divContactMap{
